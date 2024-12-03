@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+}
+
+.article{
+    padding:37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &_title{
+        color: var(--principal-color);
+        font-size:1.6rem;
+        line-height: 1.88;
+    }
+        &_intro-title{
+            font-size: 3.2rem;
+            font-weight: bold;
+            line-height: 1.41;
+            color: black;
+        }
+
+        &_intro-text{
+            font-size: 2rem;
+            line-height: 1.5;
+            color: #4a4a4a;
+        }
+    &_button{
+        border-radius: 22.5px;
+        background-color: white;
+        color: var(--principal-color);
+        width: 160px;
+        height: 45px;
+        border: 2px solid var(--principal-color); 
+        font-size: 1.8rem;
+        margin-top: 21px;
+        margin-bottom: 41px;
+    }
+}
+
