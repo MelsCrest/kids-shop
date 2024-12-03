@@ -2,34 +2,62 @@ header{
     background-image: url(/images/cover.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: center;
-    width: 100%;
+    background-position: 80%;
     height: 100vh;
 }
 
 .header_menu{
     background-color: var(--principal-color);
-    width: 5%;
+    width: 36.4px;
+    height: 36.8px;
     padding: 10px;
+    position: fixed;
+    z-index:50;
 }
 
 .link_img{
     width: 100%;
 }
 
-.header_title{
-    font-size: 7.5rem;
-    font-weight: 900;
-    color: white;
-    line-height: 1.33;
-    text-align: center;
-    margin-top: 419.1px;
+.header_article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 419px;
+    gap: 30px;
+    padding-left: 35px;
+    padding-right: 42px;
+    padding-bottom: 15px;
 }
 
-.header_text{
-    font-size: 2.4rem;
-    line-height: 1.17;
+.header_article-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1.67;
+    text-align: center;
+}
+
+.header_article-text{
+    font-size: 1.6rem;
+    line-height: 1.19;
     text-align: center;
     color: white;
+    font-family: "Roboto", sans-serif;
     
+}
+.header_arrow{
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.arrow_img{
+    position:absolute;
+    top:15px; 
+    left:11px;
+    width:17px;
 }

@@ -1,9 +1,11 @@
 .products{
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    text-align: center;
     background-color: var(--module-3-bg);
+    padding-top: 18px;
+    padding-bottom: 30px;
 
     &_text{
         color:#626262;
@@ -26,6 +28,10 @@
         background-color: var(--principal-color);
         border-radius: 22.5px;
         color: white;
-        font-size: 1.8rem;
+        font-size: 2rem;
+        line-height: 2.25;
+        margin: auto;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
     }
 }
