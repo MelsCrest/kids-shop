@@ -23,11 +23,18 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 419px;
-    gap: 30px;
+    padding-top: 390px;
+    gap: 20px;
     padding-left: 35px;
     padding-right: 42px;
     padding-bottom: 15px;
+
+    @media (width>768px) {
+        gap: 5px;
+        padding-top: 470px;
+        padding-left: 43px;
+        padding-right: 36px;
+    }
 }
 
 .header_article-title{
@@ -36,6 +43,12 @@ header{
     color: white;
     line-height: 1.67;
     text-align: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+    @media (width>768px) {
+        font-size: 7.5rem;
+        line-height: 1.33;
+    }
 }
 
 .header_article-text{
@@ -45,6 +58,11 @@ header{
     color: white;
     font-family: "Roboto", sans-serif;
     
+    @media (width>768px) {
+        font-size: 2.4rem;
+        line-height: 1.17;
+        padding: 0 190px;
+    }
 }
 .header_arrow{
     position: relative;
@@ -53,6 +71,11 @@ header{
     margin: auto;
     background-color: white;
     border-radius: 50%;
+
+    @media (width>768px) {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 .arrow_img{
@@ -60,4 +83,10 @@ header{
     top:15px; 
     left:11px;
     width:17px;
+
+    @media (width>768px) {
+        width:20px;
+        top:18px; 
+        left:13px;
+    }
 }
