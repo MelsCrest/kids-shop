@@ -1,0 +1,46 @@
+.footer{
+    background-color: var(--color-footer-bg);
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    &_img{
+        position: relative;
+        width: 45px;
+        height: 45px;
+        transform: translateY(-20px);
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+
+        &-link{
+            position:absolute;
+            top:10px; 
+            left:12px;
+            height:24px;
+        }
+    }   
+    
+    &_copy{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.4rem;
+        line-height: 2.14;
+        margin-bottom: 33.5px;
+        text-align: center;
+    }
+}
+.list{
+    text-align: center;
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    font-family: "Roboto", sans-serif;
+}
