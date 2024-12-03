@@ -35,6 +35,10 @@ header{
         padding-left: 43px;
         padding-right: 36px;
     }
+
+    @media (width>1280px) {
+        padding-top: 580px;
+    }
 }
 
 .header_article-title{
