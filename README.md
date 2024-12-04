@@ -1,125 +1,68 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Evaluación final Melisa Cresta
 
-# Adalab web starter kit
+Este proyecto consiste en el desarrollo de una página web responsive partiendo de un diseño compartido en Zeplin. Este forma parte de la evaluación final del **Módulo 1:HTML y CSS** de Adalab, donde se evaluan los conocimientos adquiridos durante este módulo.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+Las técnologías y lenguajes usados para la realización de este proyecto han sido:
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+- **Starter Kit de Adalab**. Creado con **node y vite**. Para crear una plantilla del proyecto HTML.
+- **Repositorio git y GitHub**. Para el control de versiones.
+- **Lenguajes HTML y CSS**. HTML para la estructura del proyecto y CSS para la hoja de estilos.
+- **Prepocesador SASS**. Para la creación de código CSS estándar.
+- **Marco de trabajo BEM**. Para una mayor legibilidad y mantenimiento del código CSS.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+## REQUISITOS
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
+### Diseño
+Para la ejecución del diseño se ha usado:
+- Sass.
+- Flexbox y CSS Grid.
+- Media queries: mobil(320px), tablet(768px) y desktop (1280px).
+- Interacciones mediante transiciones (E).
 
-## Guía de inicio rápido
+### Maquetación
+La maquetación cumple los siguientes requisitos:
+- Bóton de hamburguesa: posicionamiento fijo en la esquina superior izquierda para no desaparecer al hacer scroll.
+- Módulo 1 (hero-Comienzos compartidos): maquetación con Flexbox, altura del alto de la ventana del navegador e imagen como fondo de la sección (background-image).
+- Módulo 2 (Tu tienda de deporte): maquetación con Flexbox.
+- Módulo 3 (Vuelta al cole): maquetación con GRID adaptada a cada tamaño media querie.
+- Módulo 4 (footer): maquetación con Flexbox y enlaces en los textos de las columnas "Zapatillas" y "Twitter" (E). 
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+**NOTA:** En el módulo 3, cada "card" (imagen y texto) creada para esa sección está maquetada con Flexbox.
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+### Interacción
+El proyecto cumple con las siguientes interacciones:
+- Enlace entre el botón de flecha del Módulo 1 (hero) que lleva al Módulo 3 (Vuelta al cole).
+- Enlace entre el botón de flecha sobre el Módulo 4 (footer) que lleva al Módulo 1 (hero).
+- Todos los enlaces del Módulo 4 (footer) llevan a la web de Adalab.
+- :hover en los botones "Comprar" y "Vuelta al cole". Ambos dos cambian su tamaño durante un tiempo determinado con las propiedades transform y transition. El botón "Comprar" cambia de color (B).
+- Animación en el bóton de flecha del Módulo 4 (footer), al pasar el ratón sobre él se desplaza hacia arriba un par de veces como en un salto (B). 
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+> **NOTA:** Todo estos puntos eran requisitos del proyecto. Aquellos marcados con una (E) eran Extras y con (B) eran un Bonus.
 
-```bash
-npm install
-```
+## INSTALACIÓN
+Dentro de nuestro archivo de trabajo abrir una terminal BASH y clonar el repositorio de github.
+Comprobar que estamos en la ruta del directorio adecuada. Posteriormente instalar las dependencias "node_modules" para la ejecución del framework Vite, e iniciar el proyecto. 
 
-### Pasos para arrancar el proyecto:
+Clonar repositorio:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+$ git clone https://example.com
 
-```bash
-npm run dev
-```
+Ruta directorio:
 
-Este comando:
+$ cd ../path/to/the/file
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+Instalación dependencias:
 
-Después de ejecutar `npm run dev` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+$ npm install
 
-### Pasos para publicar el proyecto en GitHub Pages:
+Iniciar proyecto:
 
-Para generar tu página para producción ejecuta el comando:
+$ npm start
 
-```bash
-npm run build
-```
+## PUBLICACIÓN 
+Primero generamos la página para producción. En la terminal BASH introducimos los comandos:
+$ npm run build
+$ npm run push-docs
+$npm run deploy
 
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-<!--
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
--->
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-<!--
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
--->
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+A continuación subimos el repositorio a la carpeta `docs/` que se acaba de generar. En la pestaña `settings` del repositorio ir al apartado de GitHub Pages y activar la opción **master branch /docs folder** 
