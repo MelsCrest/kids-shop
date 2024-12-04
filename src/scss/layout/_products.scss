@@ -50,6 +50,11 @@
         font-family: "Roboto", sans-serif;
         font-weight: 500;
     }
+
+    &_button:hover{
+        transition: 0.2s;
+        transform: scale(1.2);
+    }
 }
 
 .item1, .item2, .item6{
