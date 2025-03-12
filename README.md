@@ -1,4 +1,4 @@
-# Evaluación final Melisa Cresta
+# KID'S SHOP
 
 Este proyecto consiste en el desarrollo de una página web responsive de ropa para niños partiendo de un diseño compartido en Zeplin.
 
