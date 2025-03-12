@@ -1,6 +1,6 @@
 # Evaluación final Melisa Cresta
 
-Este proyecto consiste en el desarrollo de una página web responsive partiendo de un diseño compartido en Zeplin. Este forma parte de la evaluación final del **Módulo 1:HTML y CSS** de Adalab, donde se evaluan los conocimientos adquiridos durante este módulo.
+Este proyecto consiste en el desarrollo de una página web responsive de ropa para niños partiendo de un diseño compartido en Zeplin.
 
 Las técnologías y lenguajes usados para la realización de este proyecto han sido:
 
@@ -60,9 +60,7 @@ Iniciar proyecto:
 $ npm start
 
 ## PUBLICACIÓN 
-Primero generamos la página para producción. En la terminal BASH introducimos los comandos:
-$ npm run build
+Primero generamos la página para producción. En la terminal BASH introducimos el comandos:
 $ npm run push-docs
-$npm run deploy
 
 A continuación subimos el repositorio a la carpeta `docs/` que se acaba de generar. En la pestaña `settings` del repositorio ir al apartado de GitHub Pages y activar la opción **master branch /docs folder** 
